@@ -1,0 +1,73 @@
+.water-color {
+  color: #00ccff; }
+
+.phone-color {
+  color: #b22222; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.underline {
+  text-decoration: underline; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.justify {
+  text-align: justify; }
+
+.vertical-line {
+  border-left-width: 1px;
+  border-left-style: solid; }
+
+.coach {
+  color: #07437e; }
+  .coach:hover {
+    color: #00ccff;
+    text-decoration: none; }
+
+body {
+  background-image: url(images/fon2.png);
+  color: #07437e;
+  font-family: "Arial", sans-serif;
+  font-size: 15px; }
+
+.container-fluid {
+  max-width: 1040px;
+  background: white; }
+
+h1 {
+  font-family: "Neucha", sans-serif;
+  font-size: 40px; }
+
+h2 {
+  font-family: "Neucha", sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px; }
+
+h3, h4, h5 {
+  font-family: "Arial", sans-serif;
+  font-size: 15px; }
+
+img {
+  max-width: 200px;
+  max-height: 283px;
+  margin-bottom: 20px; }
+
+.row {
+  padding-bottom: 30px; }
+
+@media screen and (max-width: 768px) {
+  /*.row {
+		//padding-bottom: 0;
+		//border-bottom-width: 1px;
+		//border-bottom-style: solid;
+	}*/
+  img {
+    max-width: 100%;
+    max-height: 100%; }
+  .vertical-line {
+    border-left-style: hidden; } }

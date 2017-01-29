@@ -1,0 +1,106 @@
+$general-color: #07437e;
+$water-color: #00ccff;
+$phone-color: #b22222;
+
+$h-font: 'Neucha', sans-serif;
+$general-font: 'Arial', sans-serif;
+$general-font-size: 15px;
+$h1-font-size: 40px;
+$h2-font-size: 18px;
+
+$content-width: 1040px;
+$photo-width: 200px;
+$photo-height: 283px;
+$between-rows: 30px;
+
+
+
+.water-color {
+	color: $water-color;
+}
+.phone-color {
+	color: $phone-color;
+}
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.justify {
+	text-align: justify;
+}
+.vertical-line {
+	border-left-width: 1px;
+	border-left-style: solid;
+}
+.coach {
+	color: $general-color;	
+	&:hover {
+		color: $water-color;
+		text-decoration: none;
+	}
+}
+
+body {
+	background-image: url(images/fon2.png);
+	color: $general-color;
+	font-family: $general-font;
+	font-size: $general-font-size;
+}
+
+.container-fluid {
+	max-width: $content-width;
+	background: white;
+}
+
+@mixin h-style($ff, $fs) {
+	font-family: $ff;
+	font-size: $fs;
+}
+
+h1 {
+	@include h-style($h-font, $h1-font-size);
+}
+
+h2 {
+	@include h-style($h-font, $h2-font-size);
+	letter-spacing: 2px;
+}
+
+h3, h4, h5 {
+	@include h-style($general-font, $general-font-size);
+}
+
+img {
+	max-width: $photo-width;
+	max-height: $photo-height;
+	margin-bottom: 20px;
+}
+
+.row {
+	padding-bottom: $between-rows;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	/*.row {
+		//padding-bottom: 0;
+		//border-bottom-width: 1px;
+		//border-bottom-style: solid;
+	}*/
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.vertical-line {
+		border-left-style: hidden;
+	}
+}
